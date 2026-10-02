@@ -67,7 +67,8 @@ Whatever markup you end up with, please keep these `data-testid` attributes on t
 
 ## 📦 What we expect back
 
-- Your changes as a branch, a pull request, or a separate repository (a link or a zip). Project should start with npm command.
+- Your changes as a branch, a pull request, or a separate repository (a link or a zip). Once ready, send a link to email from which you received the task.
+- Project should start with npm command.
 - A `FINDINGS.md` file. For every problem you found: the symptom, the root cause, and the fix, or why you decided not to fix it.
 
 ## ⏱️ Time
