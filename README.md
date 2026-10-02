@@ -43,6 +43,7 @@ The app has two tabs: **Exchange Rate** and **History**. All input comes from th
 ## 👩‍💻 Development
 
 - Using AI tools is allowed.
+- Use React. All other libs are up to you.
 - If any aspect of the desired UI behaviour is ambiguous, please use your expertise and implement the best UX. Feel free to add any third-party libraries you find useful.
 - The API is available under `/api` (see `vite.config.ts`). Before you start, set `CANDIDATE_ID` in `.env` to the email address we sent the task to (copy `.env.example` to `.env` if it's missing) and keep it unchanged for the whole task.
 - The app should run via `npm run dev` and build via `npm run build` (`npm run preview` serves the build).
