@@ -1,0 +1,28 @@
+.keypad {
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: minmax(48px, auto);
+  gap: 8px;
+  background: #f3eeee;
+  padding: 50px 30px;
+  border-radius: 30px;
+}
+
+.keypadButton {
+  background: transparent;
+  border: 0;
+  font-size: clamp(24px, 10vw, 40px);
+  min-width: 0;
+  padding: 0;
+}
+
+.keypadButton:disabled {
+  opacity: 0.2;
+}
+
+@media (max-height: 760px) {
+  .keypad {
+    padding-block: 16px;
+  }
+}

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/**
+ * Global CSS variables for the application.
+*/
+
+:root {
+  --color-primary: #316bff;
+  --color-secondary: #e94747;
+  --color-text: #000;
+}
+
+/**
+ * Reset some default styles and set global styles for the application.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-optical-sizing: auto;
+  background: #f2f2f2;
+  color: var(--color-text);
+}
+
+button,
+select {
+  font: inherit;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/**
+ * Styles for the main application container and common elements.
+*/
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+button:disabled,
+select:disabled {
+  cursor: default;
+}

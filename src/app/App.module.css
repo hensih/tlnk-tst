@@ -1,0 +1,149 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: min(760px, calc(100dvh - 64px));
+  min-height: 500px;
+  background: #e8e8e8;
+  margin: 32px auto;
+  width: min(390px, calc(100% - 24px));
+
+  border-radius: 40px;
+  box-shadow: 0px 2px 31px 0px #0000004f;
+}
+
+.header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0 0 0;
+}
+.divider {
+  font-size: 20px;
+  padding: 0px 11px;
+}
+.header button {
+  background: transparent;
+  border: 0;
+  font-size: 17px;
+  cursor: pointer;
+}
+.header button[aria-pressed='true'] {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.exchangePanel {
+  padding: 16px 30px 0;
+}
+.exchangeFields {
+  margin-top: auto;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 8px;
+}
+.currencySelect {
+  width: calc(50% - 11px);
+  min-width: 0;
+  flex-shrink: 0;
+  font-size: 22px;
+  background: transparent;
+  border: 0;
+  appearance: none;
+}
+.amount {
+  font-size: 30px;
+  text-align: right;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.currencyRow {
+  display: flex;
+  align-items: center;
+}
+
+.inputHint {
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.panelFooter {
+  flex-shrink: 0;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 18px;
+  margin-bottom: 18px;
+}
+
+.historyPanel {
+  padding: 30px 30px 0;
+}
+
+.historyRows {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.historyPanel .panelFooter p {
+  margin: 0;
+}
+
+.historyPanel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.historyRow {
+  font-size: 22px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 360px) {
+  .historyRow {
+    font-size: 16px;
+  }
+}
+
+.historyRow[aria-selected='true'] {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+@media (max-height: 760px) {
+  .app {
+    height: calc(100dvh - 16px);
+    margin: 8px auto;
+  }
+
+  .header {
+    padding-top: 16px;
+  }
+
+  .historyPanel {
+    padding-top: 16px;
+  }
+
+  .panelFooter {
+    padding-top: 8px;
+    margin-bottom: 12px;
+  }
+}
